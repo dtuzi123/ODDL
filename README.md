@@ -1,5 +1,4 @@
 
-# Task-Free Continual Learning via Online Discrepancy Distance Learning
 
 >📋 This is the implementation of Task-Free Continual Learning via Online Discrepancy Distance Learning
 
