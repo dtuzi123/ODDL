@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="description" content="NeuralRecon-W reconstructs 3D scene geometry from a monocular video with known camera poses in real-time. Accepted in CVPR 2021 as oral."/> -->
+    <title>Neural 3D Reconstruction in the Wild</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        background: rgb(255, 255, 255) no-repeat fixed top left;
+        font-family:'Open Sans', sans-serif;
+      }
+    </style>
+
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 style="font-size:30px;">Task-Free Continual Learning via Online Discrepancy Distance Learning</h2>
+            <h4 style="color:#6e6e6e;"> NeurIPS 2022 (Conference Proceedings) </h4>
+            <hr>
+            <h6> <a href="https://fy6897.wixsite.com/feiye" target="_blank">Fei Ye</a>, 
+                 <a href="https://www-users.cs.york.ac.uk/adrian/" target="_blank">Adrian G. Bors</a>, 
+                 <br>
+                 <br>
+            <p>  <a href="https://www.york.ac.uk/" style="color:#212529">Department of Computer Science,
+  University of York,
+  York, YO10 5GH, UK,
+   fy689,adrian.bors@york.ac.uk</a>
+                <br>
+            </p>
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/pdf/2205.12955" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://github.com/dtuzi123/ODDL" role="button" target="_blank" disabled=1>
+                <i class="fa fa-github-alt"></i> Code </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://github.com/dtuzi123/ODDL" role="button" 
+                    target="_blank" disabled=1>
+                <i class="fa fa-github-alt"></i> Dataset </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="files/neuconw-supp.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Supplementary</a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <div class="col-md-4"> 
+                  <img src="images/neuconw-input.png" alt="input" class="img-responsive" width="100%"/>
+                </div>
+                <div class="col-md-8"> 
+                  <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+                        <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            <!-- <div class="col-md-6 img-responsive">
+              <video width="70%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
+                    <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
+              </video>
+            </div> -->
+            <br>
+        </div>
+          <p class="text-justify">
+              Learning from non-stationary data streams, also called Task-Free Continual Learning (TFCL) remains challenging due to the absence of explicit task information. Although there are some recently proposed algorithms for TFCL, these methods lack theoretical guarantees. Moreover, there are no theoretical studies for forgetting analysis of TFCL. This paper develops a new theoretical analysis framework that derives generalization bounds based on the discrepancy distance between the visited samples and the entire information made available for training the model. This analysis provides new insights into the forgetting behaviour in classification tasks. Inspired by this theoretical model, we propose a new approach enabled with the dynamic component expansion mechanism for a mixture model, namely Online Discrepancy Distance Learning (ODDL). ODDL estimates the discrepancy between the current memory and the already accumulated knowledge as the expansion signal to ensure a compact network architecture with optimal performance. We then propose a new sample selection approach that selectively stores the samples into the memory buffer through the discrepancy-based measure, further improving the performance. We perform several TFCL experiments with the proposed methodology, which demonstrate that the proposed approach achieves the state of the art performance.
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- overview video -->
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>PLACEHODER: Overview video (5 min)</h3>
+            <hr style="margin-top:0px">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/wuMPaUTJuO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+
+
+  <!-- Pipeline overview -->
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Pipeline overview</h3>
+            <hr style="margin-top:0px">
+            <img class="img-fluid" src="images/neucon-arch.png" alt="NeuralRecon Architechture">
+            <hr style="margin-top:0px">
+            <p class="text-justify">
+              NeuralRecon predicts TSDF with a three-level coarse-to-fine approach that gradually increases the density of sparse voxels.
+              Key-frame images in the local fragment are first passed through the image backbone to extract the multi-level features. 
+              These image features are later back-projected along each ray and aggregated into a 3D feature volume $\mathbf{F}_t^l$, where $l$ represents the level index. 
+              At the first level ($l=1$), a dense TSDF volume $\mathbf{S}_t^{1}$ is predicted.
+              At the second and third levels, the upsampled $\mathbf{S}_t^{l-1}$ from the last level is concatenated with $\mathbf{F}_t^l$ 
+              and used as the input for the GRU Fusion and MLP modules.
+              A feature volume defined in the world frame is maintained at each level as the global hidden state of the GRU.
+              At the last level, the output $\mathbf{S}_t^l$ is used to replace corresponding voxels in the global TSDF volume $\mathbf{S}_t^{g}$, 
+              yielding the final reconstruction at time $t$. 
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+
+  <!-- Comparison with state-of-the-art methods -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Comparison with baseline methods</h3>
+            <!-- <p class="text-left"> 
+             Only the inference time on key frames is computed. Back-face culling is enabled during rendering. Ground-truth is captured using the LiDAR sensor on iPad Pro.</p> -->
+            <hr style="margin-top:0px">
+            <!-- <p class="text-left" style="color:#646464"> B5-Scene 1:</p> -->
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+                <source src="videos/compare_merged.m4v" type="video/mp4">
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <br>
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>
+Wait
+
+}</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- ack -->
+  <!-- <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Acknowledgements</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+            We would like to specially thank Reviewer 3 for the insightful and constructive comments.
+            We would like to thank Sida Peng , Siyu Zhang and Qi Fang for the proof-reading.
+          </p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- rec -->
+  <!-- <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Recommendations to other works from our group</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+            Welcome to checkout our work on Transformer-based feature matching (<a href="http://zju3dv.github.io/loftr">LoFTR</a>) and human reconstruction (<a href="http://zju3dv.github.io/neuralbody">NeuralBody</a> and <a href="http://zju3dv.github.io/Mirrored-Human">Mirrored-Human</a>) in CVPR 2021.
+          </p>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+  </footer>
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>
