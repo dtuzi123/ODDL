@@ -15,6 +15,7 @@ Learning from non-stationary data streams, also called Task-Free Continual Learn
 
 ![image](https://github.com/dtuzi123/ODDL/blob/main/ODDL_newStructure.png)
 
+The structure of the proposed model consisted of k components where each component has a classifier and VAE model. We only update the current component (k) in the training process. To check the model expansion, we generate the images for each component using the associated VAE model. Then those generated samples are used to estimate the discrepancy distance between the memory buffer and each previously learnt component. If the discrepancy distance is large, we expand the network architecture, otherwise, we perform the sample selection.
 
 
 Python 3.6
