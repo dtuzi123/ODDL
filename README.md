@@ -6,7 +6,7 @@
 
 # Title : Task-Free Continual Learning via Online Discrepancy Distance Learning
 
-# Paper link : 
+# Paper link : https://arxiv.org/pdf/2210.06579.pdf
 
 
 # Abstract
@@ -24,4 +24,20 @@ Tensorflow 2.5
 ## How to get results
 
 You can directly run the python script. After the training, the evaluation results will be calculated.
+
+## If you think our paper is intesting for you, you can cite our paper by:
+
+@misc{https://doi.org/10.48550/arxiv.2210.06579,
+  doi = {10.48550/ARXIV.2210.06579},
+  
+  url = {https://arxiv.org/abs/2210.06579},
+  
+  author = {Ye, Fei and Bors, Adrian G.},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},  title = {Task-Free Continual Learning via Online Discrepancy Distance Learning},
+  publisher = {arXiv},
+  year = {2022}
+}
+
+
  
