@@ -2,7 +2,7 @@
 
 >📋 This is the implementation of Task-Free Continual Learning via Online Discrepancy Distance Learning
 
->📋 Accepted by NeurIPS 2022
+>📋 Accepted by NeurIPS 2022 (Spotlight)
 
 # Title : Task-Free Continual Learning via Online Discrepancy Distance Learning
 
